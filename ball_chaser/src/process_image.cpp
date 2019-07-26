@@ -25,9 +25,10 @@ void drive_robot(float lin_x, float ang_z)
 void process_image_callback(const sensor_msgs::Image img)
 {
 
-    int white_pixel = 255,i;
+    int white_pixel = 255;
+    int i;
     bool ball_found = false;
-    int place;
+    double place;
     
 
     // TODO: Loop through each pixel in the image and check if there's a bright white one
